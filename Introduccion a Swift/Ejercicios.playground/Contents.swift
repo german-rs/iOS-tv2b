@@ -3,9 +3,134 @@
 import UIKit
 
 
+/*      CLASES EN SWIFT 5.3     */
+
+
+
+
+/*       ENUM EN SWIFT 5.2       */
+
+/*
+enum color
+{
+    case Rojo
+    case Azul
+    case Verde
+    case Amarillo
+}
+
+enum color_2 : Int
+{
+    case Rojo = 1, Azul, Verde, Amarillo
+    
+}
+
+enum colores
+{
+    
+    case Rojo, Azul, Verde, Amarillo
+    
+    func elegirColor() -> String
+    {
+        
+        switch self
+        {
+            case .Rojo: return "Has seleccionado el color rojo"
+            case .Azul: return "Has seleccionado el color azul"
+            case .Verde: return "Has seleccionado el color verde"
+            case .Amarillo: return "Has seleccionado el color amarillo"
+        }
+    }
+    
+}
+
+print(color_2.Rojo)
+print(colores.Azul.elegirColor())
+*/
+ 
+
+
+/*      FUNCIONES EN SWIFT 5.1    */
+
+/*
+func saludar(nombre : String) -> String
+{
+    let saludo = "Hola \(nombre), como estas?"
+    return saludo
+}
+
+print(saludar("German"))
+*/
+
+/*      FOR, WHILE, DO(REPEAT)-WHILE Y SWITCH 4.1, 4.2, 4.3, 4.4 Y 4.5      */
+
+/*
+let color = "Azul"
+
+switch (color)
+{
+    case "rojo":
+    print("Has seleccionado el color \(color)")
+    break;
+    
+    case "verde":
+    print("Has seleccionado el color \(color)")
+    break;
+    
+    case "amarillo":
+    print("Has seleccionado el color \(color)")
+    break;
+    
+    case "azul":
+    print("Has seleccionado el color \(color)")
+    break;
+
+    default:
+    print("Ese color no esta disponible")
+    break;
+}
+
+
+
+
+var a:Int = 1
+
+repeat //do esta obsoleto
+{
+    print("valor de a = ", a)
+    a+=1
+} while (a < 5);
+
+
+
+var i:Int = 1
+
+while i <= 5
+{
+    print("se repite \(i) cantidad de veces")
+    i+=1
+}
+
+var control:Int
+
+for (control=1; control < 5 ; control+=1) //clasico for estará obsoleto
+{
+    print(control)
+}
+
+var palabrasReservadas:[String] = ["case","if","for"]
+
+for palabra in palabrasReservadas
+{
+    print("Palabras reservadas: \(palabra)")
+}
+
+*/
+
+
 /*      DICCIONARIOS EN SWIFT 3.4    */
 
-
+/*
 var ramos:Dictionary<Int, String> = [1:"Programación", 2:"Base de datos", 3:"Desarrollo web"]
 
 var ramos2 = [1:"Programación", 2:"Base de datos", 3:"Desarrollo web"]
@@ -35,7 +160,7 @@ for ramo in ramos.values
 {
     print(ramo)
 }
-
+*/
 
 /*      ARRAYS EN SWIFT 3.2 Y 3.3   */
 
