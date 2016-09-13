@@ -2,10 +2,54 @@
 
 import UIKit
 
+/*      PROTOCOLOS EN SWIFT 5.3     */
+
+
+
+
 
 /*      CLASES EN SWIFT 5.3     */
 
+class Marca
+{
+    
+    var velocidad:Int
+    var puertas:Int
+    
+    func pedido() -> String
+    {
+        return "Mi coche lo quiero con \(velocidad) de velocidad máxima " +
+            "y con el número de puertas: \(puertas) ";
+    }
+    
+    
+    init() //constructor
+    {
+        velocidad   = 0
+        puertas     = 3
+    }
+    
+}
 
+
+let miCoche = Marca()
+
+class miPedido : Marca
+{
+    
+    override init()
+    {
+        super.init()
+        velocidad   = 220
+        puertas     = 3
+        
+    }
+    
+}
+
+let pedido = miPedido()
+
+print("Mi pedido : \(miPedido().pedido()) ")
 
 
 /*       ENUM EN SWIFT 5.2       */
