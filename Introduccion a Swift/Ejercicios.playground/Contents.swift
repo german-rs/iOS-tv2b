@@ -4,7 +4,34 @@ import UIKit
 
 /*      PROTOCOLOS EN SWIFT 5.3     */
 
+protocol miProtocolo
+{
+    
+    func sumar() -> Int
+    
+}
 
+class miClase:miProtocolo
+{
+    
+    var suma:Int
+    let x:Int = 12
+    let y:Int = 11
+    
+    func sumar() -> Int
+    {
+        return suma;
+    }
+    
+    
+    init ()
+    {
+        suma = x + y
+    }
+}
+
+let sumador = miClase()
+print("La suma es: \(sumador.suma)")
 
 
 
